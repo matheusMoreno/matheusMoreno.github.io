@@ -1,0 +1,181 @@
+/* Defining the fade-in upwards animation */
+@keyframes fade-in {
+  from {
+    transform: translateY(1.5vh);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fade-in {
+  from {
+    -webkit-transform: translateY(1.5vh);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes fade-in {
+  from {
+    -moz-transform: translateY(1.5vh);
+    opacity: 0;
+  }
+  to {
+    -moz-transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Defining the icons fade-in upwards animation */
+@keyframes icons-fade-in {
+  from {
+    transform: translateY(1.5vh);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 0.5;
+  }
+}
+
+@-webkit-keyframes icons-fade-in {
+  from {
+    -webkit-transform: translateY(1.5vh);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateY(0);
+    opacity: 0.5;
+  }
+}
+
+@-moz-keyframes icons-fade-in {
+  from {
+    -moz-transform: translateY(1.5vh);
+    opacity: 0;
+  }
+  to {
+    -moz-transform: translateY(0);
+    opacity: 0.5;
+  }
+}
+
+@media (max-aspect-ratio: 4/3) {
+  /* Implement mobile later */
+}
+
+body {
+  background-color: #202020;
+}
+
+a {
+  color: #cccccc;
+}
+
+a:active {
+    color: #cccccc;
+}
+
+a:visited {
+    color: #cccccc;
+}
+
+/* Settings for the main info */
+.main-info {
+  text-align: left;
+  position: absolute;
+  top: 20vh;
+  left: 7.5vw;
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* Settings for the greeting */
+.greeting {
+  opacity: 0;
+  font-weight: 400;
+  font-size: 1.75vw;
+  color: #ffffff;
+  margin-top: 0%;
+  margin-bottom: 0%;
+  -webkit-animation: fade-in 1s forwards ease;
+  -moz-animation: fade-in 1s forwards ease;
+  animation: fade-in 1s forwards ease;
+}
+
+/* Settings for my name */
+.name {
+  opacity: 0;
+  font-weight: 700;
+  font-size: 7vw;
+  color: #e02646;
+  margin-top: 0%;
+  margin-bottom: 0%;
+  -webkit-animation: fade-in 1s forwards ease;
+  -moz-animation: fade-in 1s forwards ease;
+  animation: fade-in 1s forwards ease;
+  -webkit-animation-delay: .5s;
+  -moz-animation-delay: .5s;
+  animation-delay: .5s;
+}
+
+/* Settings for my bio */
+.shortest-bio {
+  opacity: 0;
+  font-weight: 400;
+  font-size: 1.75vw;
+  color: #ffffff;
+  -webkit-animation: fade-in 1s forwards ease;
+  -webkit-animation-delay: 1s;
+  -moz-animation: fade-in 1s forwards ease;
+  -moz-animation-delay: 1s;
+  animation: fade-in 1s forwards ease;
+  animation-delay: 1s;
+}
+
+/* Settings for each icon */
+.ind-icon {
+  opacity: 0;
+  font-size: 3.5vw;
+  padding-right: 2.5%;
+  padding-top: 2.5%;
+  -webkit-animation: icons-fade-in 1s forwards ease;
+  -webkit-animation-delay: 1.5s;
+  -moz-animation: icons-fade-in 1s forwards ease;
+  -moz-animation-delay: 1.5s;
+  animation: icons-fade-in 1s forwards ease;
+  animation-delay: 1.5s;
+}
+
+.fas {
+  padding-right: 4.5%;
+}
+
+/* Settings for the icon to become opaque. the transform property fixes
+   a bug where the icon kinda jumps a little bit. */
+.ind-icon:hover {
+  opacity: 1;
+  -webkit-animation-fill-mode: none;
+  -moz-animation-fill-mode: none;
+  animation-fill-mode: none;
+  -webkit-transform: rotate(0);
+  -moz-transform: rotate(0);
+  transform: rotate(0);
+}
+
+/* Settings for the credits */
+.credits {
+  position: fixed;
+  bottom: 1vh;
+  right: 1vw;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 1vw;
+  color: #cccccc;
+  text-align: right;
+}

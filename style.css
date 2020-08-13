@@ -66,24 +66,21 @@
   }
 }
 
-@media (max-aspect-ratio: 4/3) {
-  /* Implement mobile later */
-}
-
-body {
+/* Setting background and font size */
+html {
+  font-size: 100%;
   background-color: #202020;
 }
 
+/* Setting links as the same color as the text */
 a {
   color: #cccccc;
-}
-
-a:active {
+  &:active {
     color: #cccccc;
-}
-
-a:visited {
+  }
+  &:visited {
     color: #cccccc;
+  }
 }
 
 /* Settings for the main info */
@@ -129,6 +126,7 @@ a:visited {
   opacity: 0;
   font-weight: 400;
   font-size: 1.75vw;
+  max-width: 60vw;
   color: #ffffff;
   -webkit-animation: fade-in 1s forwards ease;
   -webkit-animation-delay: 1s;
@@ -152,6 +150,7 @@ a:visited {
   animation-delay: 1.5s;
 }
 
+/* Giving a little bit of space between the email icon and everything else */
 .fas {
   padding-right: 4.5%;
 }
@@ -178,4 +177,30 @@ a:visited {
   font-size: 1vw;
   color: #cccccc;
   text-align: right;
+}
+
+/* Scalling everything for vertical media */
+@media only screen and (max-aspect-ratio: 3/4) {
+  .main-info {
+    top: 25vh;
+    left: 5vw;
+  }
+  .greeting {
+    font-size: 3.5vw;
+  }
+  .name {
+    font-size: 10vw;
+  }
+  .shortest-bio {
+    font-size: 3.5vw;
+    max-width: 75vw;
+  }
+  .ind-icon {
+    font-size: 7.5vw;
+  }
+  .credits {
+    font-size: 2.75vw;
+    bottom: 1.25vh;
+    right: 3vw;
+  }
 }

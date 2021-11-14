@@ -139,7 +139,7 @@ a {
 /* Settings for each icon */
 .ind-icon {
   opacity: 0;
-  font-size: 2.75vw;
+  font-size: 3vw;
   padding-right: 2.5%;
   padding-top: 2.5%;
   -webkit-animation: icons-fade-in 1s forwards ease;

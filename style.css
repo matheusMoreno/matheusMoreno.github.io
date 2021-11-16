@@ -71,6 +71,7 @@ html {
   font-size: 100%;
   height: 100%;
   background-image: linear-gradient(#334049 30%, #1b2227);
+  background-color: #334049;
 }
 
 /* Setting links as the same color as the text */
@@ -207,5 +208,6 @@ a {
   }
   .credits {
     font-size: 2.5vw;
+    max-width: 60vw;
   }
 }

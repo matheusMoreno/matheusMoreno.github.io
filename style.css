@@ -81,6 +81,12 @@ a {
 
 /* Scalling everything for vertical media */
 @media only screen and (max-aspect-ratio: 3/4) {
+  body {
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    touch-action: none;
+  }
   #top-half {
     position: absolute;
     left: 0;

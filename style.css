@@ -1,167 +1,68 @@
-/* Defining the fade-in upwards animation */
-@keyframes fade-in {
-  from {
-    transform: translateY(1.5vh);
-    opacity: 0;
-  }
-  to {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-
-@-webkit-keyframes fade-in {
-  from {
-    -webkit-transform: translateY(1.5vh);
-    opacity: 0;
-  }
-  to {
-    -webkit-transform: translateY(0);
-    opacity: 1;
-  }
-}
-
-@-moz-keyframes fade-in {
-  from {
-    -moz-transform: translateY(1.5vh);
-    opacity: 0;
-  }
-  to {
-    -moz-transform: translateY(0);
-    opacity: 1;
-  }
-}
-
-/* Defining the icons fade-in upwards animation */
-@keyframes icons-fade-in {
-  from {
-    transform: translateY(1.5vh);
-    opacity: 0;
-  }
-  to {
-    transform: translateY(0);
-    opacity: 0.5;
-  }
-}
-
-@-webkit-keyframes icons-fade-in {
-  from {
-    -webkit-transform: translateY(1.5vh);
-    opacity: 0;
-  }
-  to {
-    -webkit-transform: translateY(0);
-    opacity: 0.5;
-  }
-}
-
-@-moz-keyframes icons-fade-in {
-  from {
-    -moz-transform: translateY(1.5vh);
-    opacity: 0;
-  }
-  to {
-    -moz-transform: translateY(0);
-    opacity: 0.5;
-  }
-}
-
 /* Setting background and font size */
 html {
   font-size: 100%;
   height: 100%;
-  background-image: linear-gradient(#334049 30%, #1b2227);
-  background-color: #334049;
+  background-color: #1D5C63;
+}
+
+#top-half {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 75%;
+  height: 100%;
+  background-color: #EDE6DB;
 }
 
 /* Setting links as the same color as the text */
 a {
-  color: #f5e8fa;
+  color: #1A3C40;
   &:active {
-    color: #f5e8fa;
+    color: #1A3C40;
   }
   &:visited {
-    color: #f5e8fa;
+    color: #1A3C40;
   }
 }
 
 /* Settings for the main info */
 .main-info {
   position: fixed;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
+  bottom: 5vh;
+  left: 3vw;
+  text-align: left;
   overflow: auto;
-  text-align: center;
   display: flex;
-  justify-content: center;
   align-items: stretch;
   flex-direction: column;
-  font-family: 'Montserrat', sans-serif;
-}
-
-/* Settings for the greeting */
-.greeting {
-  opacity: 0;
-  font-weight: 300;
-  font-size: 1.75vw;
-  color: #f5e8fa;
-  margin-top: 0%;
-  margin-bottom: 0%;
-  -webkit-animation: fade-in 1s forwards ease;
-  -moz-animation: fade-in 1s forwards ease;
-  animation: fade-in 1s forwards ease;
 }
 
 /* Settings for my name */
 .name {
-  opacity: 0;
+  opacity: 1;
   font-weight: 700;
   font-size: 7vw;
-  color: #A668A6;
+  color: #1D5C63;
   margin-top: 0vh;
   margin-bottom: 1vh;
-  -webkit-animation: fade-in 1s forwards ease;
-  -moz-animation: fade-in 1s forwards ease;
-  animation: fade-in 1s forwards ease;
-  -webkit-animation-delay: .5s;
-  -moz-animation-delay: .5s;
-  animation-delay: .5s;
+  font-family: "DM Serif Display", serif;
 }
 
-/* Settings for my bio */
-.shortest-bio {
-  opacity: 0;
+.title {
+  opacity: 1;
   font-weight: 300;
-  font-size: 1.75vw;
-  max-width: 60vw;
-  padding-bottom: 1vh;
-  margin: 0 auto;
-  color: #f5e8fa;
-  -webkit-animation: fade-in 1s forwards ease;
-  -webkit-animation-delay: 1s;
-  -moz-animation: fade-in 1s forwards ease;
-  -moz-animation-delay: 1s;
-  animation: fade-in 1s forwards ease;
-  animation-delay: 1s;
+  font-size: 2.25vw;
+  color: #417D7A;
+  margin-top: -2.5vh;
+  margin-bottom: 1.5vh;
+  font-family: "Raleway", sans-serif;
+  font-style: italic;
 }
 
 /* Settings for each icon */
 .ind-icon {
-  opacity: 0;
+  opacity: 0.5;
   font-size: 2.75vw;
-  padding: 1%;
-  -webkit-animation: icons-fade-in 1s forwards ease;
-  -webkit-animation-delay: 1.5s;
-  -moz-animation: icons-fade-in 1s forwards ease;
-  -moz-animation-delay: 1.5s;
-  animation: icons-fade-in 1s forwards ease;
-  animation-delay: 1.5s;
-}
-
-/* Giving a little bit of space between the email icon and everything else */
-.fas {
   padding-right: 2%;
 }
 
@@ -177,37 +78,31 @@ a {
   transform: rotate(0);
 }
 
-/* Settings for the credits */
-.credits {
-  position: fixed;
-  bottom: 1vh;
-  right: 1vw;
-  max-width: 30%;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 200;
-  font-size: 1vw;
-  color: #f5e8fa;
-  text-align: right;
-}
-
 
 /* Scalling everything for vertical media */
 @media only screen and (max-aspect-ratio: 3/4) {
-  .greeting {
-    font-size: 3.5vw;
+  #top-half {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 75%;
+    background-color: #EDE6DB;
+  }
+  .main-info {
+    bottom: 27.5%;
+    left: 7.5vw;
   }
   .name {
-    font-size: 10vw;
+    font-size: 11vw;
   }
-  .shortest-bio {
-    font-size: 3.5vw;
-    max-width: 80%;
+  .title {
+    font-size: 4.5vw;
+    margin-top: -1.75vh;
+    margin-bottom: 0.25vh;
   }
   .ind-icon {
     font-size: 7.5vw;
-  }
-  .credits {
-    font-size: 2.5vw;
-    max-width: 60%;
+    padding-right: 5%;
   }
 }

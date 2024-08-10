@@ -91,18 +91,17 @@ a {
   }
   .main-info {
     bottom: 27.5%;
-    left: 7.5vw;
+    left: 7.5%;
   }
   .name {
     font-size: 11vw;
   }
   .title {
     font-size: 4.5vw;
-    margin-top: -1.75vh;
-    margin-bottom: 0.25vh;
+    margin-top: -1.25vh;
   }
   .ind-icon {
-    font-size: 7.5vw;
+    font-size: 8.5vw;
     padding-right: 5%;
   }
 }

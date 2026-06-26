@@ -1,0 +1,13 @@
+title: Matheus Fernandes Moreno
+email: matheus.fernandes_moreno@etu.sorbonne-universite.fr
+description: >-
+  My very simple personal webpage
+baseurl: ""
+url: "https://matheusmoreno.github.io"
+linkedin_username: matheusfmoreno
+github_username: matheusMoreno
+show_downloads: false
+
+remote_theme: pages-themes/primer@v0.6.0
+plugins:
+  - jekyll-remote-theme
